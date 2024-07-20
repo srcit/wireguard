@@ -1,6 +1,6 @@
 FROM alpine:3.20
 
-RUN apk add --no-cache wireguard-tools tini sudo
+RUN apk add --no-cache wireguard-tools tini sudo ip6tables openresolv coredns iptables iputils net-tools
 
 RUN adduser -u 1000 -D wire
 
